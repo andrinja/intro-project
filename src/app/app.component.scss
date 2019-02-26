@@ -1,0 +1,40 @@
+*, body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  body {
+    background: rgba(196, 196, 196, .33);
+  }
+  h1, h2, h3, p {
+    font-family: "Roboto", sans-serif;
+  }
+  .team-header {
+    background-image: url("https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3800&q=80");
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .header-text {
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  .headline {
+    font-size: 48px;
+    font-weight: 300;
+  }
+  .divider {
+    background: #865BFF;
+    height: 4px;
+    width: 114px;
+  }
+  .white {
+    color: #fff;
+  }
+  .container {
+    position: relative;
+  }
+

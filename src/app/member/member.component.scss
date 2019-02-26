@@ -1,0 +1,126 @@
+.profile-picture {
+  text-align: center;
+}
+.profile-picture img {
+  margin: 0 auto;
+  object-fit: cover;
+  height: 164px;
+  width: 164px;
+  border-radius: 50%;
+  background: red;
+  
+}
+.group-member {
+    width: 26vw;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 2%;
+    max-height: 65vh;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease;
+    margin-bottom: 84px;
+
+    &.expanded {
+
+      .btnExpand {
+
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  .member-container {
+    margin-top: 13%;
+  }
+  .member-name {
+    margin-top: 20px;
+    margin-bottom: 30px;   
+    text-align: center; 
+  }
+  
+  .skill-icons {
+    margin: 18px 33px;
+    margin-bottom: 2em;
+  }
+  .fab, .fas {
+    margin: 0px 8px 0px 8px;
+  }
+  
+  .small-top-margin {
+    margin-top: 11px;
+  }
+  footer {
+    height: 10vh;
+  }
+  /*expanding div classes*/
+  
+  .group-member.expanded {
+    max-height: 1000px;
+  }
+  .btnExpand {
+    background: #F2C94C;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    &:before {
+      right: 25px;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      right: 18px;
+      transform: rotate(-45deg);
+    }
+  }
+  
+  /*Changing arrow orientation*/
+  
+  /* #btnExpand.active {
+    background: blue;
+  } */
+  
+  .btnExpand:before, .btnExpand:after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 26px;
+    transition: transform .5s;
+  }
+  
+  .center-text {
+    text-align: left;
+    
+  }
+  .middle-margin {
+    margin: 36px 41px;
+  }
+  .off-gray {
+    color: #616066;
+  }
+  .margin-left-41 {
+    margin-left: 41px
+  }
+  
+  .purple {
+    color: #865BFF;
+  }
+  
+  @media screen and (max-width: 992px) {
+    body {
+      background: blue;
+    }
+  }
